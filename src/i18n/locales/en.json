@@ -1,0 +1,427 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "book": "Book a Table",
+    "admin": "Admin"
+  },
+  "home": {
+    "badge": "Built for Egyptian Cafés",
+    "hero": {
+      "title_1": "Your café,",
+      "title_2": "digitally",
+      "title_3": "transformed.",
+      "subtitle": "QR menus, table bookings, and personalized experiences — all managed from one beautiful dashboard. Built for Egyptian cafés.",
+      "tagline": "Digital café platform",
+      "cta_primary": "Book a Table",
+      "cta_secondary": "Explore the Menu",
+      "trust": "Trusted by cafés across Egypt"
+    },
+    "stats": {
+      "setup": "Setup time",
+      "mobile": "Mobile ready",
+      "realtime": "Dashboard updates",
+      "bookings": "Online bookings"
+    },
+    "features": {
+      "heading": "Everything your café needs",
+      "subheading": "One platform to manage your menu, bookings, staff, and inventory.",
+      "badge": "Everything included",
+      "learn_more": "Learn more",
+      "items": {
+        "qr_menu": { "title": "QR Digital Menu", "desc": "Scan, browse, and explore. Your full menu on every phone — updated instantly, no reprints ever." },
+        "booking": { "title": "Table Booking", "desc": "Let guests reserve their favorite spot online, 24/7. Confirmations handled automatically." },
+        "special": { "title": "Special Openings", "desc": "Birthdays, engagements, graduations — personalized table setups with gold stickers and custom add-ons.", "tag": "Exclusive" },
+        "dashboard": { "title": "Admin Dashboard", "desc": "One place to manage bookings, edit your menu live, and track everything — from your phone." },
+        "staff": { "title": "Staff Management", "desc": "Track shifts, attendance, and salaries. Replace your paper notebook with a clean digital system." },
+        "inventory": { "title": "Inventory Control", "desc": "Monitor stock levels in real-time. Get alerts before you run out of your essentials." }
+      }
+    },
+    "how": {
+      "badge": "Simple process",
+      "heading": "Live in one week",
+      "steps": {
+        "build": { "title": "We build it", "desc": "Your custom QR menu, website, booking system, and dashboard — all branded to your café in one week." },
+        "live":  { "title": "You go live",  "desc": "Print your QR code and place it on every table. Customers scan, browse, and book instantly." },
+        "grow":  { "title": "You grow",     "desc": "Track bookings, update your menu in seconds, and earn extra revenue from Special Openings." }
+      }
+    },
+    "cta": {
+      "heading": "Ready to transform your café?",
+      "subheading": "Full package from 3,500 EGP. Live in 7 days. Zero risk — pay half upfront, the rest when you see the result.",
+      "primary": "Start with a Free Demo",
+      "secondary": "View Live Demo"
+    },
+    "footer": {
+      "tagline": "The complete digital platform for Egyptian cafés. QR menus, bookings, staff, and inventory — all in one place.",
+      "links": {
+        "product": "Product",
+        "company": "Company",
+        "support": "Support"
+      },
+      "copy": "© 2026 Arc. All rights reserved.",
+      "status": "All systems operational"
+    }
+  },
+  "menu": {
+    "title": "Digital Menu",
+    "not_found": "Café not found",
+    "not_found_desc": "Check the QR code and try again.",
+    "search_placeholder": "Search menu...",
+    "no_items": "No items found",
+    "share_title": "Share this menu",
+    "share_desc": "Scan to open menu on any device"
+  },
+  "booking": {
+    "title": "Book a Table",
+    "not_found": "Café not found",
+    "step": "Step",
+    "of": "of",
+    "type": {
+      "heading": "Choose booking type",
+      "regular": "Regular",
+      "regular_sub": "Standard table",
+      "special": "Special ✦",
+      "special_sub": "Personalized"
+    },
+    "when": {
+      "heading": "When are you coming?",
+      "date": "Date",
+      "time": "Time",
+      "guests": "Guests"
+    },
+    "special_details": {
+      "heading": "Special details",
+      "occasion": "Occasion",
+      "addons": "Add-ons",
+      "sticker_label": "Sticker / Banner Text (optional)",
+      "sticker_placeholder": "e.g., Happy Birthday Sarah!"
+    },
+    "contact": {
+      "heading": "Your details",
+      "name": "Full Name",
+      "name_placeholder": "Your name",
+      "phone": "Phone Number",
+      "phone_placeholder": "01xxxxxxxxx"
+    },
+    "nav": {
+      "back": "Back",
+      "next": "Next",
+      "confirm": "Confirm Booking"
+    },
+    "success": {
+      "title": "You're all set!",
+      "subtitle": "Your table at {{cafe}} is reserved.",
+      "ref": "Reference",
+      "date": "Date",
+      "time": "Time",
+      "guests": "Guests",
+      "occasion": "Occasion",
+      "note": "Save your reference number. We'll confirm your booking shortly!",
+      "home": "Back to Home",
+      "another": "Make Another Booking"
+    },
+    "occasions": {
+      "Birthday": "Birthday",
+      "Anniversary": "Anniversary",
+      "Proposal": "Proposal",
+      "Graduation": "Graduation",
+      "Date Night": "Date Night",
+      "Other": "Other"
+    }
+  },
+  "admin": {
+    "nav": {
+      "overview": "Overview",
+      "dashboard": "Dashboard",
+      "bookings": "Bookings",
+      "menu": "Menu",
+      "staff": "Staff",
+      "shifts": "Shifts",
+      "inventory": "Inventory",
+      "settings": "Settings",
+      "logout": "Logout",
+      "home": "Home"
+    },
+    "dashboard": {
+      "greeting": "Good evening, Arc ✦",
+      "welcome": "Welcome back. Here's what's happening today.",
+      "pending": "pending",
+      "stats": {
+        "bookings": "Today's Bookings",
+        "special": "Special Openings",
+        "guests": "Total Guests",
+        "revenue": "Addons Revenue",
+        "pending": "Pending",
+        "staff": "Staff on Shift",
+        "low_stock": "Low Stock Items"
+      },
+      "recent": {
+        "title": "Recent Bookings",
+        "subtitle": "Latest 5 bookings",
+        "no_bookings": "No bookings yet",
+        "view_all": "View all bookings",
+        "guests": "guests"
+      },
+      "alerts": {
+        "title": "Low Stock Alerts",
+        "items_attention": "{{count}} items need attention",
+        "all_healthy": "All stock levels healthy",
+        "manage": "Manage inventory",
+        "all_healthy_msg": "All stock levels are healthy",
+        "min": "min:"
+      }
+    },
+    "bookings": {
+      "title": "Bookings",
+      "subtitle": "Manage guest table reservations and special setups.",
+      "live_updates": "Live Updates Enabled",
+      "refresh": "Refresh",
+      "error": "Error loading bookings:",
+      "no_results": "No bookings match your filters.",
+      "select_booking": "Select a booking to view complete details and take actions.",
+      "type": {
+        "regular": "Regular",
+        "special": "Special"
+      },
+      "filters": {
+        "date": "Date Filter",
+        "status": "Status",
+        "type": "Type",
+        "all_statuses": "All Statuses",
+        "all_types": "All Types"
+      },
+      "table": {
+        "guest": "Guest",
+        "date_time": "Date & Time",
+        "guests": "Guests",
+        "type": "Type",
+        "status": "Status"
+      },
+      "details": {
+        "title": "Booking Details",
+        "guest_name": "Guest Name",
+        "phone": "Phone",
+        "date": "Date",
+        "time": "Time",
+        "guests": "Guests",
+        "type": "Type",
+        "persons": "persons",
+        "special_request": "Special Opening Request",
+        "occasion": "Occasion",
+        "banner_text": "Banner / Sticker Text",
+        "addons": "Add-ons Selected",
+        "actions": "Actions"
+      },
+      "actions": {
+        "confirm": "Confirm",
+        "cancel": "Cancel",
+        "cancel_booking": "Cancel Booking",
+        "restore": "Restore (Confirm)"
+      }
+    },
+    "menu_manager": {
+      "title": "Menu Manager",
+      "subtitle": "Add, update, or reorganize items on your digital menu.",
+      "live_menu": "Live Menu",
+      "add_item": "Add Item",
+      "error_title": "Failed to save item",
+      "error_hint": "Did you run the SQL database upgrade script from the previous step?",
+      "all_categories": "All Categories",
+      "table": {
+        "name": "Name",
+        "category": "Category",
+        "price": "Price",
+        "order": "Order",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "available": "Available",
+      "unavailable": "Unavailable",
+      "no_items": "No menu items found.",
+      "qr_title": "Live QR Code",
+      "qr_subtitle": "Scan to open customer menu",
+      "qr_print": "Print and stick on café tables!",
+      "modal": {
+        "edit_title": "Edit Menu Item",
+        "add_title": "Add Menu Item",
+        "item_name": "Item Name",
+        "item_name_placeholder": "e.g. Espresso",
+        "category": "Category",
+        "category_placeholder": "e.g. Hot Drinks",
+        "description": "Description",
+        "description_placeholder": "Describe the taste, ingredients, or size details...",
+        "price": "Price (EGP)",
+        "price_placeholder": "0.00",
+        "badge": "Badge",
+        "badge_none": "None",
+        "badge_bestseller": "Bestseller",
+        "badge_signature": "Signature",
+        "badge_seasonal": "Seasonal",
+        "sort_order": "Sort Order",
+        "available_label": "Available for Ordering",
+        "cancel": "Cancel",
+        "save": "Save Item"
+      },
+      "delete_confirm": "Are you sure you want to delete this menu item?"
+    },
+    "staff": {
+      "title": "Staff Management",
+      "subtitle": "Manage café employees, roles, salaries, and schedules.",
+      "add_employee": "Add Employee",
+      "active_staff": "Active Staff",
+      "monthly_payroll": "Monthly Payroll",
+      "filter_status": "Filter Status",
+      "all": "all",
+      "active": "active",
+      "inactive": "inactive",
+      "error": "Error:",
+      "table": {
+        "name": "Name",
+        "phone": "Phone",
+        "role": "Role",
+        "shift": "Shift Preference",
+        "salary": "Salary",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "active_status": "Active",
+      "inactive_status": "Inactive",
+      "edit": "Edit",
+      "delete": "Delete",
+      "no_employees": "No employees found matching the criteria.",
+      "modal": {
+        "edit_title": "Edit Employee Details",
+        "add_title": "Add New Employee",
+        "full_name": "Full Name",
+        "name_placeholder": "e.g. Mahmoud Ali",
+        "phone": "Phone Number",
+        "phone_placeholder": "e.g. 01012345678",
+        "role": "Role",
+        "preferred_shift": "Preferred Shift",
+        "salary": "Salary (EGP/month)",
+        "salary_placeholder": "0",
+        "cancel": "Cancel",
+        "save": "Save Employee"
+      },
+      "delete_confirm": "Delete {{name}}? This cannot be undone."
+    },
+    "shifts": {
+      "title": "Shifts & Attendance",
+      "subtitle": "Track daily attendance and shift schedules for active staff.",
+      "refresh": "Refresh",
+      "error": "Error:",
+      "present": "Present",
+      "absent": "Absent",
+      "late": "Late",
+      "table": {
+        "employee": "Employee",
+        "role": "Role",
+        "shift_preference": "Shift Preference",
+        "morning": "Morning Shift",
+        "evening": "Evening Shift"
+      },
+      "unmarked": "Unmarked",
+      "add_note": "Add note...",
+      "not_scheduled": "Not scheduled",
+      "no_employees": "No active employees available.",
+      "alert_status": "Please select a status (Present/Absent/Late) before saving a note."
+    },
+    "login": {
+      "title": "Arc. Dashboard",
+      "subtitle": "Secure admin login",
+      "username": "Admin Username",
+      "username_placeholder": "Enter the admin user",
+      "password": "Password",
+      "password_placeholder": "Enter the admin password",
+      "authenticating": "Authenticating...",
+      "sign_in": "Sign In"
+    },
+    "inventory": {
+      "title": "Inventory Management",
+      "subtitle": "Monitor stock, log item usage, and track vendor purchases.",
+      "add_item": "Add Item",
+      "log_transaction": "Log Transaction",
+      "log_purchase": "Log Purchase",
+      "tabs": {
+        "stock": "Stock Levels",
+        "transactions": "Stock Transactions",
+        "purchases": "Purchase Log"
+      },
+      "alert": "alert",
+      "error": "Error:",
+      "stock_table": {
+        "item": "Item Name",
+        "unit": "Unit",
+        "current": "Current Stock",
+        "min": "Min. Required",
+        "status": "Status"
+      },
+      "low_stock_warning": "Low Stock Warning",
+      "healthy": "Healthy",
+      "no_items": "No inventory items found. Add items to track them.",
+      "transactions_table": {
+        "date": "Date",
+        "item": "Item",
+        "type": "Type",
+        "quantity": "Quantity",
+        "notes": "Notes",
+        "logged_by": "Logged By"
+      },
+      "deleted_item": "Deleted Item",
+      "no_transactions": "No stock transactions logged.",
+      "system_vendor": "System / Vendor",
+      "purchases_table": {
+        "date": "Date",
+        "item": "Item",
+        "quantity": "Quantity",
+        "unit_cost": "Unit Cost",
+        "total_cost": "Total Cost",
+        "supplier": "Supplier"
+      },
+      "no_purchases": "No purchase logs found.",
+      "item_modal": {
+        "title": "Add Inventory Item",
+        "item_name": "Item Name",
+        "item_placeholder": "e.g. Coffee Beans",
+        "unit": "Unit",
+        "starting_stock": "Starting Stock",
+        "min_threshold": "Min. Stock Alert Threshold",
+        "cancel": "Cancel",
+        "save": "Save Item"
+      },
+      "transaction_modal": {
+        "title": "Log Stock Transaction",
+        "select_item": "Select Stock Item",
+        "choose_item": "Choose Item...",
+        "type": "Transaction Type",
+        "stock_in": "STOCK IN (add stock)",
+        "stock_out": "STOCK OUT (usage/loss)",
+        "quantity": "Quantity",
+        "quantity_placeholder": "0.00",
+        "employee": "Authorized Employee (optional)",
+        "employee_placeholder": "System / Owner",
+        "date": "Date",
+        "notes": "Transaction Notes",
+        "notes_placeholder": "e.g., Weekly espresso bar usage, wasted milk, etc.",
+        "cancel": "Cancel",
+        "save": "Log Transaction"
+      },
+      "purchase_modal": {
+        "title": "Log Supplier Purchase",
+        "select_item": "Select Stock Item",
+        "choose_item": "Choose Item...",
+        "supplier": "Supplier Name",
+        "supplier_placeholder": "e.g. Nestlé Egypt, Coffee Suppliers Ltd",
+        "quantity": "Quantity Purchased",
+        "quantity_placeholder": "0.00",
+        "unit_cost": "Unit Cost (EGP)",
+        "unit_cost_placeholder": "0.00",
+        "date": "Purchase Date",
+        "estimated_total": "Estimated Total Cost:",
+        "cancel": "Cancel",
+        "save": "Log Purchase"
+      }
+    }
+  }
+}
