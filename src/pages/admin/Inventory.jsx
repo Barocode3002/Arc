@@ -29,19 +29,17 @@ export default function Inventory() {
 
   const { employees, fetchEmployees } = useStaff(DEFAULT_CAFE_ID)
 
-  // Modals state
   const [itemModalOpen, setItemModalOpen] = useState(false)
   const [transactionModalOpen, setTransactionModalOpen] = useState(false)
   const [purchaseModalOpen, setPurchaseModalOpen] = useState(false)
 
-  // Form states
   const [itemForm, setItemForm] = useState({ name: '', unit: 'kg', min_stock: 0, current_stock: 0 })
   const [transactionForm, setTransactionForm] = useState({ item_id: '', type: 'in', quantity: '', note: '', employee_id: '', date: getTodayDate() })
   const [purchaseForm, setPurchaseForm] = useState({ item_id: '', quantity: '', unit_cost: '', supplier_name: '', date: getTodayDate() })
 
   useEffect(() => {
     fetchItems()
-    fetchEmployees(true) // Get active employees for transaction forms
+    fetchEmployees(true)
   }, [fetchItems, fetchEmployees])
 
   useEffect(() => {
@@ -116,7 +114,7 @@ export default function Inventory() {
         </div>
       </div>
 
-      {/* Tabs list */}
+      {/* Tabs */}
       <div className="border-b border-brand-200">
         <nav className="flex gap-6">
           {[
@@ -171,18 +169,12 @@ export default function Inventory() {
                     const low = isLowStock(item.current_stock, item.min_stock)
                     return (
                       <tr key={item.id} className={cn('hover:bg-brand-50/20 transition-colors', low && 'bg-danger-50/30')}>
-                        <td className="px-6 py-4 font-semibold text-brand-900">
-                          {item.name}
-                        </td>
-                        <td className="px-6 py-4 text-brand-600 font-medium capitalize">
-                          {item.unit}
-                        </td>
+                        <td className="px-6 py-4 font-semibold text-brand-900">{item.name}</td>
+                        <td className="px-6 py-4 text-brand-600 font-medium capitalize">{item.unit}</td>
                         <td className={cn('px-6 py-4 font-bold text-lg', low ? 'text-danger-600' : 'text-brand-900')}>
                           {item.current_stock}
                         </td>
-                        <td className="px-6 py-4 text-brand-500 font-medium">
-                          {item.min_stock}
-                        </td>
+                        <td className="px-6 py-4 text-brand-500 font-medium">{item.min_stock}</td>
                         <td className="px-6 py-4">
                           {low ? (
                             <Badge variant="danger" dot>{t('admin.inventory.low_stock_warning')}</Badge>
@@ -193,7 +185,6 @@ export default function Inventory() {
                       </tr>
                     )
                   })}
-
                   {!loading && items.length === 0 && (
                     <tr>
                       <td colSpan="5" className="text-center py-10 text-brand-400">
@@ -208,7 +199,7 @@ export default function Inventory() {
         </div>
       )}
 
-      {/* TAB 2: Transactions */}
+      {/* TAB 2: Transactions — fixed: renamed map variable from (t) to (txn) */}
       {activeTab === 'transactions' && (
         <Card padding={false} className="overflow-hidden animate-fade-in">
           <div className="overflow-x-auto">
@@ -224,31 +215,30 @@ export default function Inventory() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-brand-100 bg-white">
-                {transactions.map((t) => (
-                  <tr key={t.id} className="hover:bg-brand-50/10 transition-colors">
+                {transactions.map((txn) => (
+                  <tr key={txn.id} className="hover:bg-brand-50/10 transition-colors">
                     <td className="px-6 py-4 text-brand-600 font-mono">
-                      {formatDate(t.date)}
+                      {formatDate(txn.date)}
                     </td>
                     <td className="px-6 py-4 font-semibold text-brand-900">
-                      {t.inventory_items?.name || t('admin.inventory.deleted_item')}
+                      {txn.inventory_items?.name || t('admin.inventory.deleted_item')}
                     </td>
                     <td className="px-6 py-4">
-                      <Badge variant={t.type === 'in' ? 'success' : 'danger'}>
-                        {t.type.toUpperCase()}
+                      <Badge variant={txn.type === 'in' ? 'success' : 'danger'}>
+                        {txn.type.toUpperCase()}
                       </Badge>
                     </td>
                     <td className="px-6 py-4 font-bold text-brand-950">
-                      {t.quantity}
+                      {txn.quantity}
                     </td>
                     <td className="px-6 py-4 text-brand-500 italic max-w-xs truncate">
-                      {t.note || '-'}
+                      {txn.note || '-'}
                     </td>
                     <td className="px-6 py-4 text-brand-600">
-                      {t.employees?.name || t('admin.inventory.system_vendor')}
+                      {txn.employees?.name || t('admin.inventory.system_vendor')}
                     </td>
                   </tr>
                 ))}
-
                 {!loading && transactions.length === 0 && (
                   <tr>
                     <td colSpan="6" className="text-center py-10 text-brand-400">
@@ -278,29 +268,28 @@ export default function Inventory() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-brand-100 bg-white">
-                {purchases.map((p) => (
-                  <tr key={p.id} className="hover:bg-brand-50/10 transition-colors">
+                {purchases.map((purchase) => (
+                  <tr key={purchase.id} className="hover:bg-brand-50/10 transition-colors">
                     <td className="px-6 py-4 text-brand-600 font-mono">
-                      {formatDate(p.date)}
+                      {formatDate(purchase.date)}
                     </td>
                     <td className="px-6 py-4 font-semibold text-brand-900">
-                      {p.inventory_items?.name || t('admin.inventory.deleted_item')}
+                      {purchase.inventory_items?.name || t('admin.inventory.deleted_item')}
                     </td>
                     <td className="px-6 py-4 font-bold text-brand-950">
-                      {p.quantity}
+                      {purchase.quantity}
                     </td>
                     <td className="px-6 py-4 text-brand-600">
-                      {formatCurrency(p.unit_cost)}
+                      {formatCurrency(purchase.unit_cost)}
                     </td>
                     <td className="px-6 py-4 font-bold text-brand-900">
-                      {formatCurrency(p.total_cost)}
+                      {formatCurrency(purchase.total_cost)}
                     </td>
                     <td className="px-6 py-4 text-brand-600">
-                      {p.supplier_name}
+                      {purchase.supplier_name}
                     </td>
                   </tr>
                 ))}
-
                 {!loading && purchases.length === 0 && (
                   <tr>
                     <td colSpan="6" className="text-center py-10 text-brand-400">
